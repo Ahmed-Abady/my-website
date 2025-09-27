@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="description" content="Ahmed Abady Is Acampany For Softwear Programming"/>
+        <title>Ahmed-HTML & CSS & JS</title>
+        <link rel="stylesheet" href="./index.css"/>
+    </head>
+    <body>
+<!--### start of header ###-->
+        <header class="header">
+            <div class="logoImg flexCenter">
+                <img src="./1.jpg" alt="logoImg"/>
+            </div>
+            
+            <div class="divTitle">
+                <h1 class="flexCenter">ahmed abady</h1>
+                <p class="flexCenter">welcome in my website</p>
+                <hr/>
+                <h2 class="flexCenter">front end developer useing (react)</h2>
+            </div>
+            
+            <div class="divHeaderBtn">
+                <div class="divSignBtn">
+                    <button id="logOut">log out</button>
+                    <button id="signIn">sign in</button>
+                </div>
+                <button class="signUp">sign up</button>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="#" target="-blank">home</a></li>
+                    <li><a href="#" target="-blank">about me</a></li>
+                    <li><a href="#" target="-blank">my project</a></li>
+                    <li><a href="#" target="-blank">contact me</a></li>
+                </ul>
+            </nav>
+            
+        </header>
+<!--### end of header ###-->
+        
+<!--### start of slider ###-->
+        <section class="slider">
+            <div class="sliderImg flexCenter">
+                <div class="imgNum flexCenter">image 1/5</div>
+                <img src="./1.jpg" alt="img 1" class=""/>
+                <img src="./2.jpg" alt="img 2" class=""/>
+                <img src="./3.jpg" alt="img 3" class=""/>
+                <img src="./4.jpg" alt="img 4" class=""/>
+                <img src="./5.jpg" alt="img 5" class="active"/>
+            </div>
+            
+            <div class="sliderControle">
+                <button class="prev">previous</button>
+                <div class="divCounter flexCenter">
+                    <div class="">1</div>
+                    <div class="">2</div>
+                    <div class="">3</div>
+                    <div class="">4</div>
+                    <div class="active">5</div>
+                </div>
+                <button class="next">next</button>
+            </div>
+        </section>
+<!--### end of slider ###-->
+        
+<!--### start of about me ###-->
+        <section class="aboutMe">
+            <span>about me</span>
+            
+            <p>I’m a Front-End Developer
+                I'm focus on building modern, responsive
+                and user-friendly web applications.</p>
+            
+            <p>I specialize in React
+                and enjoy turning ideas into interactive experiences on the web.</p>
+            
+            <p>My goal is to create clean, efficient code and deliver solutions
+                that combine both functionality and great design.</p>
+        </section>
+<!--### end of about me ###-->
+        
+<!--### start of my projects ###-->
+        <section class="projects">
+            <h2>my projects</h2>
+            <div class="cards">
+                
+                <div class="card">
+                    <h3>واجهة متجر إلكتروني</h3>
+                    <p>تصميم صفحة رئيسية لمتجر إلكتروني متجاوب مع أقسام للمنتجات.</p>
+                    <span class="tag">HTML & CSS</span>
+                </div>
+
+                <div class="card">
+                    <h3>لوحة تحكم مدرسية</h3>
+                    <p>تصميم لوحة لإدارة بيانات الطلاب مع جداول ورسومات بسيطة.</p>
+                    <span class="tag">CSS Grid</span>
+                </div>
+
+                <div class="card">
+                    <h3>موقع معرض صور</h3>
+                    <p>شبكة صور متجاوبة مع تأثير hover جميل ومرونة في الترتيب.</p>
+                    <span class="tag">Flexbox</span>
+                </div>
+
+                <div class="card">
+                    <h3>مكونات UI</h3>
+                    <p>كروت وأزرار ونافذة منبثقة مصممة بشكل موحّد ومتجاوب.</p>
+                    <span class="tag">Reusable</span>
+                </div>
+                
+            </div>
+        </section>
+<!--### end of my projects ###-->
+        
+        <hr/>
+        <div class="gradientColor"></div>
+        <hr/>
+        
+        <script src="./app.js"></script>
+    </body>
+</html>
+
+<!--
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <title>Redirecting...</title>
+      <meta http-equiv="refresh" content="0; url=https://username.github.io/new-repo-name/">
+  <script>
+            // كمان JavaScript fallback لو المتصفح ما دعمش meta refresh
+    window.location.href = "https://ahmed-abady.github.io/my-website/";
+  </script>
+</head>
+<body>
+  <p>If you are not redirected automatically, <a href="https://username.github.io/new-repo-name/">click here</a>.</p>
+</body>
+</html>
+
+######################
+
+
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>معرض مشاريعي</title>
+  <style>
+    :root{
+      --elephant-light: #f3f2ea; /* سن الفيل فاتح */
+      --elephant-dark: #d9d8cf;  /* سن الفيل أغمق */
+      --text: #333;
+      --accent: #7a796c;
+    }
+
+    body{
+      margin:0;
+      font-family: "Segoe UI","Tajawal",sans-serif;
+      background: var(--elephant-light);
+      color: var(--text);
+      padding: 30px 15px;
+    }
+
+    .projects{
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .projects h2{
+      text-align: center;
+      margin-bottom: 25px;
+      color: var(--accent);
+    }
+
+    .cards{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 18px;
+    }
+
+    .card{
+      background: #fff;
+      border: 1px solid var(--elephant-dark);
+      border-radius: 12px;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      transition: transform .2s ease, box-shadow .2s ease;
+    }
+
+    .card:hover{
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.08);
+    }
+
+    .card h3{
+      margin:0;
+      font-size: 18px;
+      color: var(--accent);
+    }
+
+    .card p{
+      margin:0;
+      font-size: 14px;
+      line-height: 1.5;
+      color: #555;
+    }
+
+    .card .tag{
+      font-size: 12px;
+      padding: 4px 8px;
+      border-radius: 8px;
+      background: var(--elephant-dark);
+      color: #333;
+      display: inline-block;
+      margin-top: 6px;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="projects">
+    <h2>مشاريعي — Front-End</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>واجهة متجر إلكتروني</h3>
+        <p>تصميم صفحة رئيسية لمتجر إلكتروني متجاوب مع أقسام للمنتجات.</p>
+        <span class="tag">HTML & CSS</span>
+      </div>
+
+      <div class="card">
+        <h3>لوحة تحكم مدرسية</h3>
+        <p>تصميم لوحة لإدارة بيانات الطلاب مع جداول ورسومات بسيطة.</p>
+        <span class="tag">CSS Grid</span>
+      </div>
+
+      <div class="card">
+        <h3>موقع معرض صور</h3>
+        <p>شبكة صور متجاوبة مع تأثير hover جميل ومرونة في الترتيب.</p>
+        <span class="tag">Flexbox</span>
+      </div>
+
+      <div class="card">
+        <h3>مكونات UI</h3>
+        <p>كروت وأزرار ونافذة منبثقة مصممة بشكل موحّد ومتجاوب.</p>
+        <span class="tag">Reusable</span>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
+
+######################
+
+
+
+-->
+
+
+
+
